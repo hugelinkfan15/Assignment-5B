@@ -1,3 +1,9 @@
+/*
+* Kayden Miller
+* Assignment 5B
+* Used for shooting in a 3D environment
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

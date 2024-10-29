@@ -1,3 +1,9 @@
+/*
+* Kayden Miller
+* Assignment 5B
+* Used to denoted objects as items, and assign them health
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +11,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+    public TargetTracker tracker;
 
     public void TakeDamage(float amount)
     {
@@ -17,6 +24,7 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+        tracker.Hit();
         Destroy(gameObject);
     }
 }
